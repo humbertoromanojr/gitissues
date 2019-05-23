@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./config/ReactotronConfig";
 import { StyleSheet, Text, View } from "react-native";
 
 export default class App extends Component {
