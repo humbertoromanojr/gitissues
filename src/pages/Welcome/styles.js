@@ -47,7 +47,9 @@ const styles = StyleSheet.create({
   buttonText: {
     color: colors.dark,
     fontSize: 16,
-    textShadow: 2,
+    textShadowColor: colors.white,
+    textShadowOffset: { width: 1, height: 3 },
+    textShadowRadius: 3,
     fontWeight: 'bold',
   },
 });
