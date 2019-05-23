@@ -1,12 +1,28 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import {
+  View, Text, TextInput, TouchableOpacity,
+} from 'react-native';
 
-// import { Container } from './styles';
+import styles from './styles';
 
-export default function Welcome() {
-  return (
-    <View>
-      <Text>Welcome</Text>
+const Welcome = () => (
+  <View style={styles.container}>
+    <Text style={styles.title}>Bem-vindo</Text>
+    <Text style={styles.text}>Para continuar, informe seu Github!</Text>
+
+    <View style={styles.form}>
+      <TextInput
+        style={styles.input}
+        autoCapitalize="none"
+        autoCorrect={false}
+        placeholder="Digite seu usuário"
+        underlineColorAndroid="transparent"
+      />
+      <TouchableOpacity style={styles.button} onPress={() => {}}>
+        <Text style={styles.buttonText}>Prosseguir</Text>
+      </TouchableOpacity>
     </View>
-  );
-}
+  </View>
+);
+
+export default Welcome;
