@@ -5,8 +5,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.secundary,
-    padding: metrics.basePadding * 2,
-    justifyContent: 'center',
+    padding: metrics.basePadding,
+    justifyContent: 'flex-start',
     alignItems: 'stretch',
   },
 
@@ -25,6 +25,8 @@ const styles = StyleSheet.create({
   },
 
   form: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     marginTop: metrics.baseMargin * 2,
   },
 
@@ -32,14 +34,16 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: metrics.baseRadius,
     height: 44,
+    width: '85%',
     paddingHorizontal: metrics.basePadding,
   },
 
   button: {
-    backgroundColor: colors.primary,
+    backgroundColor: colors.white,
     borderRadius: metrics.baseRadius,
     height: 44,
-    marginTop: metrics.baseMargin,
+    width: 40,
+    marginLeft: metrics.baseMargin,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -51,6 +55,10 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 1, height: 3 },
     textShadowRadius: 3,
     fontWeight: 'bold',
+  },
+
+  icon: {
+    color: colors.dark,
   },
 });
 
